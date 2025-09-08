@@ -1,0 +1,101 @@
+/* Smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Container (form card) */
+.addlab-container {
+  background: #ffffff;
+  padding: 30px;
+  max-width: 450px;
+  margin: 60px auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  animation: fadeInUp 0.6s ease;
+}
+
+/* Title */
+.addlab-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Inputs + Textarea */
+.addlab-input,
+.addlab-textarea {
+  width: 90%;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #333;
+  background: #fafafa;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.addlab-input:focus,
+.addlab-textarea:focus {
+  border-color: #4a90e2;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+/* Textarea specific */
+.addlab-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Button */
+.addlab-button {
+  width: 100%;
+  padding: 14px 20px;
+  background: linear-gradient(135deg, #4a90e2, #357abd);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.addlab-button:hover {
+  background: linear-gradient(135deg, #357abd, #4a90e2);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(74, 144, 226, 0.3);
+}
+
+.addlab-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Toastify custom */
+.Toastify__toast--success {
+  background: #4caf50 !important;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.Toastify__toast--error {
+  background: #f44336 !important;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+}
