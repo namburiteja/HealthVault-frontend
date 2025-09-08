@@ -16,7 +16,7 @@ export default function PatientProfile({ patientId }) {
 
         // ✅ Fetch patient details
         const response = await axios.post(
-          "http://172.30.106.15:8090/patient/getmydetails",
+          "http://192.168.1.145:8090/patient/getmydetails",
           { patientId }
         );
 
@@ -38,7 +38,7 @@ export default function PatientProfile({ patientId }) {
   const handleSave = async () => {
   try {
     const response = await axios.patch(
-      "http://172.30.106.15:8090/patient/updateblood",
+      "http://192.168.1.145:8090/patient/updateblood",
       {
         patientId: patient.patientId,          // required for backend
         bloodGroup: editableData.bloodGroup,
@@ -65,7 +65,7 @@ export default function PatientProfile({ patientId }) {
 
   return (
     <div className="card patient-profile">
-      <h2>My Profile</h2>
+      <h2>{patient.patientName}</h2>
 
       <p><b>ID:</b> {patient.patientId}</p>
 

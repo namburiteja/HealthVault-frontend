@@ -11,7 +11,7 @@ export default function DoctorLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await axios.post("http://172.30.106.15:8090/login/login", form);
+      let res = await axios.post("http://192.168.1.145:8090/login/login", form);
       alert(res.data.message || "Doctor login successful!");
       Navigate("/doctor/dashboard");
     } catch (err) {

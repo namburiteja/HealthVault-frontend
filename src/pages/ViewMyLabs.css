@@ -1,0 +1,35 @@
+.view-labs-container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.labs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.lab-card {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.lab-card h3 {
+  margin: 0 0 10px;
+}
+
+.lab-details {
+  white-space: pre-wrap;
+  background-color: #eef;
+  padding: 10px;
+  border-radius: 5px;
+}

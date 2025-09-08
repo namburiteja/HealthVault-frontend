@@ -12,7 +12,7 @@ export default function PatientLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://172.30.106.15:8090/login/login", form);
+      const res = await axios.post("http://192.168.1.145:8090/login/login", form);
         console.log(res.data);
       // store in localStorage if needed
       localStorage.setItem("Id", res.data.id);

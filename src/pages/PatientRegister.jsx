@@ -17,7 +17,7 @@ export default function PatientRegister() {
       return;
     }
     try {
-      let res = await axios.post("http://172.30.106.15:8090/login/patientregister", form);
+      let res = await axios.post("http://192.168.1.145:8090/login/patientregister", form);
       alert(res.data.message || "Patient registered successfully!");
       navigate("/patient/login");
     } catch (err) {
