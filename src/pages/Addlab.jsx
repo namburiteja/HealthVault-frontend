@@ -55,7 +55,7 @@ export default function AddLab() {
       toast.success("✅ Lab record inserted successfully!");
       console.log("Response:", data);
     } catch (error) {
-      toast.success("✅ Lab record inserted successfully!");
+      toast.error("❌ Error inserting lab record!");
       console.error(error);
     }
   };
@@ -67,8 +67,7 @@ export default function AddLab() {
       <input
         type="number"
         name="cost"
-        placeholder="Cost"git branch
-
+        placeholder="Cost"
         value={labData.cost}
         onChange={handleChange}
         className="addlab-input"
