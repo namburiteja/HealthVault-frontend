@@ -1,6 +1,6 @@
-import { useState } from "react";
 import axios from "axios";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function DoctorLogin() {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -11,9 +11,9 @@ export default function DoctorLogin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await axios.post("http://172.30.106.15:8090/login/login", form);
+      let res = await axios.post("http://192.168.1.145:8090/login/login", form);
       alert(res.data.message || "Doctor login successful!");
-      Navigate("/doctor/dashboard");
+      Navigate("/doctor/Appointments");
     } catch (err) {
       alert("Login failed: " + err.response?.data?.message);
     }

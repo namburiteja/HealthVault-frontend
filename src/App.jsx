@@ -1,13 +1,14 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RoleSelector from "./components/RoleSelector";
-import PatientLogin from "./pages/PatientLogin";
-import PatientRegister from "./pages/PatientRegister";
-import DoctorLogin from "./pages/DoctorLogin";
-import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
-import DoctorDashboard from "./pages/DoctorDashboard";
+import AdminLogin from "./pages/AdminLogin";
+import Appointments from "./pages/Appointments";
+import DoctorLogin from "./pages/DoctorLogin";
 import PatientDashboard from "./pages/PatientDashboard";
+import PatientLogin from "./pages/PatientLogin";
+import DoctorEdit from "./pages/Doctoredit";
 import PatientProfile from "./pages/PatientProfile";
+import PatientRegister from "./pages/PatientRegister";
 
 function App() {
   return (
@@ -20,8 +21,9 @@ function App() {
           <Route path="admin/login" element={<AdminLogin />} />
         </Route>
         <Route path="/admin/dashboard" element={<AdminDashboard />} />
-        <Route path="/doctor/dashboard" element={<DoctorDashboard />} />
         <Route path="/patient/dashboard" element={<PatientDashboard />} />
+        <Route path="/doctor/appointments" element={<Appointments />} />
+        <Route path="/doctor/edit/:patientId" element={<DoctorEdit />} />
         <Route path="/patient/profile" element={<PatientProfile />} />
       </Routes>
     </BrowserRouter>

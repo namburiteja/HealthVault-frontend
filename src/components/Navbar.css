@@ -1,14 +1,20 @@
 .navbar {
+  position: sticky;   /* stays at top when scrolling */
+  top: 0;             /* stick to top */
+  z-index: 1000;      /* stays above other elements */
+   /* your navbar color */
+  
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #1e3a8a; /* blue theme */
   padding: 10px 20px;
+  
   color: white;
 }
 
 .navbar-logo {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 

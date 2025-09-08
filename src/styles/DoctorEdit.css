@@ -1,0 +1,135 @@
+.patient-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.patient-container h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+  text-align: center;
+}
+/* ===== Previous Prescriptions List ===== */
+.previous-prescriptions {
+  max-width: 700px;
+  margin: 25px auto;
+  padding: 20px;
+  background: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.previous-prescriptions h2 {
+  font-size: 20px;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.prescription-card {
+  background: #ffffff;
+  border-left: 4px solid #16a085;
+  border-radius: 8px;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+.prescription-card:hover {
+  background: #e6f7f1;
+}
+
+.prescription-card p {
+  margin: 6px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.prescription-card strong {
+  color: #2c3e50;
+  margin-right: 6px;
+}
+
+
+/* Patient Details */
+.patient-details p {
+  font-size: 15px;
+  margin: 8px 0;
+  padding: 8px 12px;
+  background: #f9f9f9;
+  border-left: 4px solid #1e3a8a;
+  border-radius: 6px;
+}
+
+/* Form Styling */
+.form-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.form-container h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #16a085;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2c3e50;
+}
+
+.form-group textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  resize: vertical;
+  outline: none;
+  transition: border 0.2s ease;
+}
+
+.form-group textarea:focus {
+  border-color: #16a085;
+}
+
+.submit-btn {
+  background: #16a085;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #138d75;
+}
+.success-message {
+  text-align: center;
+  color: #27ae60;
+  font-weight: 600;
+  margin-top: 15px;
+}
